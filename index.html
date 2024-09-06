@@ -1,11 +1,921 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartzilla - Iqra Hyder</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartzilla - Furniture Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="m-0 p-0">
+    <!-- top header and hero section -->
+    <div class="bg-gray px-3 px-md-5">
+      <!-- above header -->
+      <div
+        class="d-flex align-items-center justify-content-between align-items-center smail-font pt-md-3 pb-1"
+      >
+        <div class="d-flex flex-row mt-3 mt-md-0">
+          <p>
+            Contact us <span class="">24/7</span>
+            <span class="border-hover fw-bold ms-md-1 cursor-pointer"
+              >+1 50 537 53 082</span
+            >
+          </p>
+        </div>
+
+        <div class="d-none d-md-block">
+          <div class="d-flex cursor-pointer">
+            <iconify-icon
+              class="me-1 fs-6 fw-medium"
+              icon="noto:fire"
+            ></iconify-icon>
+            <p>The Biggest Sale Ever 50% Off</p>
+          </div>
+        </div>
+
+        <div class="fw-medium d-flex">
+          <span class="me-4 border-hover cursor-pointer">Wishlist</span>
+          <span class="border-hover cursor-pointer">Account</span>
+        </div>
+      </div>
+
+      <!-- header -->
+      <div>
+        <!-- large screen header -->
+        <nav
+          class="navbar navbar-expand-lg bg-white rounded-5 py-2 d-none d-lg-block"
+        >
+          <div class="container-fluid">
+            <a
+              class="text-black text-decoration-none fs-4 fw-semibold me-md-5 pe-md-5 ms-md-3"
+              href="#"
+              >Cartzilla</a
+            >
+
+            <div
+              class="collapse navbar-collapse d-flex justify-content-between"
+              id="navbarSupportedContent"
+            >
+              <!-- menu -->
+              <div class="d-flex gap-3 item ms-5 ps-5">
+                <!-- home-menu -->
+                <div class="position-relative dropdown">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                  >
+                    Home
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2"
+                  >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Electronics Store <br />
+                      <span class="fw-normal">Megamenu + Hero slider</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Fashion Store v.1<br />
+                      <span class="fw-normal">Hero promo slider</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Fashion Store v.2 <br />
+                      <span class="fw-normal"
+                        >Hero banner with hotspots</span
+                      ></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Furniture Store <br />
+                      <span class="fw-normal">Fancy product carousel</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Grocery Store <br />
+                      <span class="fw-normal"
+                        >Hero slider + Category cards</span
+                      ></a
+                    >
+                  </div>
+                </div>
+
+                <!-- Shop-menu -->
+                <div class="position-relative float-end dropdown-shop">
+                  <button
+                    class="border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                  >
+                    Shop
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content-2 bg-white pt-4 p-3 rounded-2 row d-flex"
+                  >
+                    <!-- colum 1 -->
+
+                    <div class="col-4">
+                      <h6>Electronics Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Categories Page</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product General Info</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Details</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Reviews</a
+                      >
+
+                      <h6>Fashion Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+
+                      <h6>Furniture Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Top Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+                    </div>
+
+                    <!-- colum 2 -->
+
+                    <div class="col-4">
+                      <h6>Grocery Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+
+                      <h6>Checkout v.1</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shopping Cart</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info (Step 1)</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info (Step 2)</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shipping Address</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Payment</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Thank You Page</a
+                      >
+                    </div>
+
+                    <!-- colum 3 -->
+
+                    <div class="col-4">
+                      <h6>Checkout v.2</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shopping Cart</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Pickup from Store</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Thank You Page</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Account-menu -->
+                <div class="position-relative dropdown">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                  >
+                    Account
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2"
+                  >
+                    <ul class="list-unstyled">
+                      <li class="">
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item page-item"
+                          href="#"
+                          >Sign In
+                         
+                          </a>
+                        </li>
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Sign Up</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Wishlist</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Payment Methods</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >My Reviews</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Personal Info</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Addresses</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                          href="#"
+                          >Notifications</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Pages-menu -->
+                <div class="position-relative dropdown">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                  >
+                    Pages
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2"
+                  >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >About</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Blog</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Contact</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Help Center</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >404 Error</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                </div>
+
+                <button
+                  class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                >
+                  Docs
+                </button>
+
+                <button
+                  class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                >
+                  Components
+                </button>
+              </div>
+
+              <!-- icons -->
+              <div class="d-flex align-items-center cursor-pointer">
+                <iconify-icon
+                  class="mx-md-1 fs-5 blue-color cursor-pointer"
+                  icon="ic:outline-light-mode"
+                ></iconify-icon>
+                <iconify-icon
+                  class="mx-md-3 fs-5 blue-color cursor-pointer"
+                  icon="pepicons-pop:cart"
+                ></iconify-icon>
+                <iconify-icon
+                  class="mx-md-2 blue-color fs-5 bg-gray rounded-circle p-2"
+                  icon="mingcute:search-line"
+                ></iconify-icon>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- header small screens -->
+
+        <nav class="navbar bg-white rounded-5 py-2 d-block d-lg-none">
+          <div class="container-fluid">
+            <button
+              class="bg-white border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <iconify-icon
+                class="fs-2 cursor-pointer"
+                icon="tabler:menu-2"
+              ></iconify-icon>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start w-75"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Browse Cartzilla
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- home menu -->
+                <div class="position-relative dropdown-sm">
+                  <button
+                    class="border-0 bg-white py-2 px-2 blue-color d-flex align-items-center justify-content-between w-100 border-hover fw-medium"
+                  >
+                    Home
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2 w-100"
+                  >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Electronics Store <br />
+                      <span class="fw-normal">Megamenu + Hero slider</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Fashion Store v.1<br />
+                      <span class="fw-normal">Hero promo slider</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Fashion Store v.2 <br />
+                      <span class="fw-normal"
+                        >Hero banner with hotspots</span
+                      ></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Furniture Store <br />
+                      <span class="fw-normal">Fancy product carousel</span></a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-1 px-2 rounded-2 fw-semibold item"
+                      href="#"
+                      >Grocery Store <br />
+                      <span class="fw-normal"
+                        >Hero slider + Category cards</span
+                      ></a
+                    >
+                  </div>
+                </div>
+
+                <!-- Shop-menu -->
+                <div class="position-relative dropdown-sm">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center justify-content-between w-100 border-hover fw-medium"
+                  >
+                    Shop
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content-2 position-absolute bg-white pt-4 p-3 rounded-2 z-1"
+                  >
+                    <!-- colum 1 -->
+
+                    <div class="">
+                      <h6>Electronics Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Categories Page</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product General Info</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Details</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Reviews</a
+                      >
+
+                      <h6>Fashion Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+
+                      <h6>Furniture Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Top Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+                    </div>
+
+                    <!-- colum 2 -->
+
+                    <div class="">
+                      <h6>Grocery Store</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Catalog with Side Filters</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Product Page</a
+                      >
+
+                      <h6>Checkout v.1</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shopping Cart</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info (Step 1)</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info (Step 2)</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shipping Address</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Payment</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 my-1 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Thank You Page</a
+                      >
+                    </div>
+
+                    <!-- colum 3 -->
+
+                    <div class="">
+                      <h6>Checkout v.2</h6>
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Shopping Cart</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Delivery Info</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Pickup from Store</a
+                      >
+                      <a
+                        class="blue-color text-decoration-none my-2 pb-2 px-2 rounded-2 fw-normal item bg-white"
+                        href="#"
+                        >Thank You Page</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Account-menu -->
+                <div class="position-relative dropdown-sm">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center justify-content-between w-100 border-hover fw-medium"
+                  >
+                    Account
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2 w-100"
+                  >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Auth Pages</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Orders History</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Wishlist</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Payment Methods</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >My Reviews</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Personal Info</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Addresses</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Notifications</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Pages-menu -->
+                <div class="position-relative dropdown-sm">
+                  <button
+                    class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center justify-content-between w-100 border-hover fw-medium"
+                  >
+                    Pages
+                    <iconify-icon
+                      class="ms-1 fs-6 blue-color cursor-pointer"
+                      icon="mingcute:down-line"
+                    ></iconify-icon>
+                  </button>
+                  <div
+                    class="dropdown-content position-absolute bg-white z-1 p-3 rounded-2 w-100"
+                  >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >About</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Blog</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Contact</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Help Center</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >404 Error</a
+                    >
+                    <a
+                      class="blue-color text-decoration-none py-2 my-1 px-2 rounded-2 fw-normal item"
+                      href="#"
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                </div>
+
+                <button
+                  class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                >
+                  Docs
+                </button>
+
+                <button
+                  class="dropdown-btn border-0 bg-white py-2 px-2 blue-color d-flex align-items-center border-hover fw-medium"
+                >
+                  Components
+                </button>
+              </div>
+            </div>
+
+            <a
+              class="text-black text-decoration-none fs-4 fw-semibold me-md-5 pe-md-5 ms-md-3"
+              href="#"
+              >Cartzilla</a
+            >
+
+            <div class="d-flex align-items-center cursor-pointer gap-3">
+              <iconify-icon
+                class="mx-md-2 fs-5 blue-color cursor-pointer"
+                icon="ic:outline-light-mode"
+              ></iconify-icon>
+              <iconify-icon
+                class="mx-md-3 fs-5 blue-color cursor-pointer"
+                icon="pepicons-pop:cart"
+              ></iconify-icon>
+              <iconify-icon
+                class="mx-md-2 blue-color fs-5 bg-gray rounded-circle p-2"
+                icon="mingcute:search-line"
+              ></iconify-icon>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut
+          esse eligendi non aliquid, nulla veniam. Temporibus maxime sit
+          exercitationem labore beatae voluptate voluptates unde provident eos
+          facilis voluptatum, minima mollitia odit ea? Fugit aliquid aut ipsam
+          exercitationem architecto consequatur esse. Qui sunt sint dignissimos
+          nisi recusandae omnis incidunt dolores impedit, reiciendis inventore.
+          Architecto magni non maiores illo harum eligendi rerum fugit beatae
+          commodi quia officia maxime voluptas placeat deleniti ipsum eum neque
+          nostrum ea saepe perspiciatis iste, odit vitae sapiente. Placeat dolor
+          sed illum eaque voluptatibus odio ab, dolore magnam earum, quae
+          architecto provident, aspernatur temporibus delectus. Laboriosam eum
+          totam distinctio nisi facilis deserunt, recusandae doloribus culpa nam
+          magni numquam ex voluptas explicabo ducimus provident modi. Itaque a,
+          sapiente ut repellat reprehenderit quasi corporis sed, necessitatibus
+          est deserunt autem amet accusamus consequuntur expedita aut ab debitis
+          iste blanditiis deleniti sit odit. Tempore quibusdam doloremque soluta
+          fugit expedita deleniti odit laudantium, voluptatem, nam dolorum
+          voluptatibus quam cupiditate eum quidem vitae illum! Vitae rem
+          voluptatibus dolorum quam eius blanditiis, doloribus a beatae iure
+          amet libero molestiae sed ratione veniam at cumque eaque? Ipsum sunt
+          consequuntur quasi asperiores, voluptatibus doloribus ipsam quae velit
+          omnis minus quia vitae, veniam nam modi voluptas? Quos asperiores
+          aliquam repellat laboriosam facere necessitatibus doloribus ipsum odio
+          labore porro aut iusto veritatis consequuntur soluta adipisci sed
+          perferendis delectus qui, rerum vero! Vero iste quam reiciendis iusto
+          quia, sit delectus est repellendus quidem labore distinctio impedit
+          voluptate commodi nemo, voluptatibus perspiciatis consequuntur
+          quisquam tenetur fugit modi totam non consequatur quasi libero. Nulla,
+          aut impedit necessitatibus harum fugiat soluta eos, eaque perspiciatis
+          ratione unde corporis? Provident corporis consectetur atque eaque
+          veritatis veniam dignissimos sequi itaque error possimus incidunt
+          nihil similique recusandae, soluta omnis hic natus exercitationem,
+          magnam officiis dicta. Repellat hic aut dolores, enim magnam optio.
+          Optio voluptatem nemo ut, illo numquam enim quia. Quisquam itaque
+          tempore quidem illum accusamus laboriosam quo, ab dolor magnam enim
+          debitis provident, officiis ipsum necessitatibus eum sint labore
+          incidunt quas possimus! Iusto voluptatem maiores in distinctio dolorem
+          eum eaque ipsa autem, sit assumenda! Iste necessitatibus dicta, maxime
+          molestiae odit hic, ratione dignissimos fugiat porro, esse eos
+          aspernatur corrupti eaque nisi quisquam sed? Ea hic ipsa architecto
+          dolorum dolore fuga id voluptatibus nisi assumenda at aspernatur
+          distinctio, perspiciatis veniam, temporibus, provident consectetur
+          repellendus incidunt voluptates eos voluptatem! Fugit error ratione,
+          vero quod ipsam nam nobis velit illum esse, facere alias dicta
+          laudantium debitis excepturi, dolorum sint totam porro. Harum eius
+          quae consequuntur minus temporibus voluptatem assumenda aliquam saepe
+          nihil voluptatum, alias corrupti porro impedit nostrum placeat
+          sapiente perspiciatis dolore odio, at sequi beatae? Adipisci, eaque.
+          Fugiat vel, pariatur eius aperiam aspernatur modi accusantium vero
+          reiciendis! Obcaecati repellat excepturi odio perferendis,
+          dignissimos, alias suscipit, rem recusandae atque velit quam maiores
+          quod architecto a consequatur! Cum ex, qui error ducimus odio
+          perferendis rerum quas corporis veniam tenetur saepe quaerat.
+          Perferendis accusantium sapiente totam ea voluptatum, quidem
+          temporibus dignissimos delectus dolorem vitae ipsa illum animi
+          excepturi obcaecati accusamus dolor earum optio quia consequuntur
+          minus, nisi labore. Delectus, obcaecati.
+        </p>
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+        cupiditate asperiores blanditiis eligendi fugit deleniti voluptatem aut
+        rerum similique delectus, vero reprehenderit fuga quod magnam possimus,
+        repellat, quaerat dolores ullam accusantium soluta qui dolorum nostrum
+        voluptatibus maxime. Commodi sapiente fugit molestias architecto numquam
+        ea fuga est asperiores molestiae? Et necessitatibus dolore rerum
+        aspernatur, mollitia placeat fugiat minus officia assumenda quibusdam?
+        Repellendus quaerat assumenda saepe sint aliquam, fugiat velit
+        voluptatibus adipisci sapiente cupiditate ut reiciendis minus
+        exercitationem nostrum mollitia soluta ab cumque modi totam dolores
+        fugit quos? Quia incidunt nisi debitis harum vel, eaque veniam quos non
+        ad quae accusantium iure vero omnis minus dolore soluta alias pariatur
+        nam unde quidem amet voluptate deleniti. Rem illum sed provident rerum
+        saepe vitae omnis, voluptatem reiciendis dolores nesciunt, praesentium
+        tempore delectus soluta, ex debitis excepturi minima suscipit voluptatum
+        necessitatibus! Modi cupiditate illo, ut hic repudiandae dolorem
+        voluptates iste aspernatur autem. Impedit quaerat dicta ducimus saepe
+        inventore modi similique aliquam veniam dolores voluptatem recusandae,
+        quod voluptatum eos perferendis ullam earum. Sed provident deleniti
+        blanditiis nulla corporis numquam veritatis corrupti, ipsum incidunt
+        amet eos ullam, qui rerum architecto exercitationem culpa. Aperiam
+        atque, eveniet repellendus quis ipsam delectus impedit? Eius, optio ex
+        cumque id placeat asperiores laborum provident dolor fuga! Ab libero
+        deserunt dicta est sequi perspiciatis voluptatem iure hic? Adipisci,
+        illum explicabo, minus et esse dolore suscipit temporibus, ut dolorem
+        nostrum nihil hic recusandae blanditiis cum tempore mollitia. Aspernatur
+        natus porro odio minima ratione voluptates. Quo quia autem amet nam
+        harum debitis neque optio aliquid perferendis fugiat! Harum deleniti,
+        dolor atque odio reprehenderit, earum consequatur magni nemo, rem
+        dolorem odit minus ad laborum neque architecto aut officia sit animi in
+        quis est molestiae soluta! Quod, alias maiores consequatur corrupti
+        quibusdam, necessitatibus quae beatae numquam, dolore fugiat ea
+        asperiores facere. Totam possimus dolor dolorem minima maxime ipsam
+        minus expedita rerum corrupti, amet nihil quas perferendis iusto
+        molestias sunt officia eum ipsa soluta dolore unde obcaecati
+        reprehenderit pariatur. Odit explicabo quo, harum eligendi, nulla
+        excepturi consectetur qui est quos quod molestias! Ipsam, est soluta!
+        Eligendi officia ut minus a. Minima adipisci quidem praesentium, illum
+        temporibus maxime consequatur necessitatibus numquam quo quibusdam
+        excepturi vitae eos cum facilis nulla eaque nisi in sit magnam voluptate
+        itaque corrupti non ad? Delectus, tempore eius quibusdam et ipsum
+        commodi quod odio incidunt suscipit illo dicta. Nisi beatae dolor
+        placeat aut ab odio qui asperiores minus, minima eligendi optio.
+        Delectus libero excepturi, illum saepe quasi facilis perspiciatis odit
+        dolor consequuntur, magnam corporis omnis quae quisquam ducimus
+        obcaecati enim, amet sit nulla veniam atque doloremque sed officiis et!
+        Ipsa voluptas molestiae incidunt laudantium voluptates neque ipsum
+        doloribus facilis at. Odit consectetur omnis recusandae autem
+        repellendus quis optio esse est eaque ut minima placeat voluptatibus
+        dolorem explicabo perferendis, officiis eum magni illum officia eos
+        aliquid. In, nihil voluptate cum eos placeat, doloribus minus voluptates
+        facere soluta, id aut quod. Cumque itaque, iure perferendis error
+        cupiditate illo accusamus illum ullam soluta harum rem quos, odio vitae
+        amet, iste exercitationem nulla fugiat delectus fugit neque! Nam,
+        exercitationem!
+      </div>
+    </div>
+  </body>
 </html>
