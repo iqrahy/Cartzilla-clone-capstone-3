@@ -11,23 +11,23 @@
 </head>
 <body>
     
-    <div class="ps-5 pe-2 py-4 d-flex justify-content-around w-100 border row">
+    <div class="ps-5 pe-2 py-4 d-flex justify-content-around w-100 row">
 
         <!-- left section -->
-        <div class="col-lg-5 col-md-9 col-12">
+        <div class="col-lg-5 col-md-9 col-12 d-flex flex-column justify-content-between">
             <h4 class="d-flex align-items-center fw-semibold"> <iconify-icon class="me-2 fs-4 fw-medium rotate pink-color text-white p-1 rounded-circle" icon="pepicons-pop:cart" ></iconify-icon>Cartzilla</h4>
 
-            <div class="pt-md-4 pe-lg-4">
+            <div class="pt-md-5 pt-lg-4 mt-md-5 mt-lg-0 pe-lg-4">
                 <h2 class="mt-md-5 pt-3 fw-semibold">Welcome back</h2>
-                <p class="item text-black">Don't have an account? <a class="text-black fw-medium ms-1" href="">Create an account</a></p>
+                <p class="item text-black">Don't have an account? <a class="text-black fw-medium ms-1" href="/pages/create-account.html">Create an account</a></p>
 
                 <div class="w-100">
                     <form id="userForm">
                         <div class="mt-4">
-                            <input type="email" class="form-control py-2 px-3" id="exampleFormControlInput1" placeholder="Email">
+                            <input type="email" class="form-control py-2 px-3" id="exampleFormControlInput1" placeholder="Email" req>
                         </div>
                         <div class="position-relative my-4">
-                            <input type="password" class="form-control py-2 px-3" id="inputPassword" placeholder="Password">
+                            <input type="password" class="form-control py-2 px-3" id="inputPassword" placeholder="Password" required>
                             <iconify-icon class="me-4 fs-4 fw-medium text-black-50 position-absolute top-50 end-0 translate-middle-y"  icon="iconamoon:eye" ></iconify-icon>
                         </div>
 
@@ -49,7 +49,7 @@
                     <div>
                         <p class="text-center mt-4 fw-semibold continue text-secondary-emphasis">or continue with</p>
 
-                        <div class="d-none d-lg-block">
+                        <div class="d-none d-md-block">
                             <div class="d-flex justify-content-around flex-wrap">
                                 <button class="justify-content-center d-flex align-items-center mt-4 py-2 px-4 border border-secondary border-1 border-opacity-25 rounded-2 bg-white text-secondary-emphasis"> <iconify-icon class="me-1 fs-4 fw-medium"  icon="mdi:google" ></iconify-icon> Google</button>
                                 <button class="justify-content-center d-flex align-items-center mt-4 py-2 px-4 border border-secondary border-1 border-opacity-25 rounded-2 bg-white text-secondary-emphasis"> <iconify-icon class="me-1 fs-4 fw-medium"  icon="mage:facebook" ></iconify-icon>Facebook</button>
@@ -58,7 +58,7 @@
                         </div>
 
                         <!-- small screen buttons -->
-                        <div class="d-block d-lg-none">
+                        <div class="d-block d-md-none">
                             <div class="d-flex justify-content-around flex-wrap">
                                 <button class="w-100 d-flex justify-content-center align-items-center mt-4 py-2 px-4 border border-secondary border-1 border-opacity-25 rounded-2 bg-white text-secondary-emphasis"> <iconify-icon class="me-1 fs-4 fw-medium"  icon="mdi:google" ></iconify-icon> Google</button>
                                 <button class="w-100 justify-content-center d-flex align-items-center mt-4 py-2 px-4 border border-secondary border-1 border-opacity-25 rounded-2 bg-white text-secondary-emphasis"> <iconify-icon class="me-1 fs-4 fw-medium"  icon="mage:facebook" ></iconify-icon>Facebook</button>
@@ -66,21 +66,22 @@
                             </div>
                         </div>
 
-                      
                     </div>
                    
-                    <div class="mt-5 pt-3">
-                        <a class="item text-black fw-medium" href="">Need help?</a>
-                        <p class="smail-font mt-4">© All rights reserved. Made by Createx Studio</p>
-                    </div>
                 </div>
+
+                <div class="mt-5 pt-md-5 pt-lg-3">
+                    <a class="item text-black fw-medium"  href="">Need help?</a>
+                    <p class="smail-font mt-4">© All rights reserved. Made by Createx Studio</p>
+                </div>
+
             </div>
         </div>
 
 
         <!-- right section -->
         <div class="col-7 d-none d-lg-block">
-            <img class="img-fluid border rounded-4 light-blue" src="/imgs/sign-in-img.png" alt="">
+            <img class="img-fluid rounded-4 light-blue" src="/imgs/sign-in-img.png" alt="">
         </div>
     </div>
 
