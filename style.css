@@ -31,75 +31,14 @@
 .blue-color {
   color: #333d73;
 }
-.dropdown {
-  display: inline-block;
-}
-.dropdown-sm {
-  display: inline-block;
-  width: 100%;
-}
-.dropdown-shop {
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  min-width: 230px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: all 0.3s ease;
-}
-.dropdown-content-2 {
-  display: none;
-  position: absolute;
-  min-width: 650px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: all 0.3s ease;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-.dropdown-sm:hover .dropdown-content {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-.dropdown-shop:hover .dropdown-content-2 {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-.dropdown-sm:hover .dropdown-content-2 {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.dropdown-content a {
-  display: block;
-  transition: background-color 0.3s ease;
-}
-.dropdown-content-2 a {
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: #f5f7fa;
-}
-
 .item {
   font-size: 14px;
 }
 .item span {
   font-size: 13px;
 }
-.navbar {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+.largerHeader {
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.1);
 }
 .rotate {
   transform: rotate(-30deg);
@@ -140,6 +79,54 @@
 .blue-bg{
   background-color: #222934;
 }
+#homeItemList {
+  display: none; 
+  width: 245px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+}
 
+#homeMenu:hover #homeItemList {
+  display: block; 
+  position: absolute; 
+  top: 100%;
+  left: 0;
+}
 
+#shopItemList{
+  display: none;
+  width: 600px;
+  height: 415px;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+#shopMenu:hover #shopItemList{
+display: block; 
+position: absolute; 
+top: 100%;
+left: 0;
+}
+
+.bouncing-icon {
+display: inline-block;
+transition: transform 0.3s ease; 
+}
+
+.bouncing-icon:hover {
+animation: jump-out 0.6s ease; 
+}
+
+@keyframes jump-out {
+0% {
+  transform: scale(1) translateY(0);
+}
+50% {
+  transform: scale(1.0) translateY(-5px); 
+}
+100% {
+  transform: scale(1) translateY(0); 
+}
+}
+.menuItem:hover{
+  background-color: #f5f7fa;
+}
 

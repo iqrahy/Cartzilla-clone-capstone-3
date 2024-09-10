@@ -16,13 +16,12 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
 
         if(user){
             window.location.href = '../index.html';
-        } else{
+        }else{
             alert('Email or Password is incorrect!');
         }
 
     } catch (error) {
         console.error('Error:', error)
-        alert('Something went wrong. Please try again later.')
     }
 
 });
