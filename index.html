@@ -1,74 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartzilla | Furniture Store</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="m-0 p-0">
-    <!-- top header and hero section -->
-    <div class="bg-gray px-3 px-md-5">
-      <!-- above header -->
-      <div
-        class="d-flex align-items-center justify-content-between align-items-center smail-font pt-md-3 pb-1"
-      >
-        <div class="d-flex flex-row mt-3 mt-md-0">
-          <p>
-            Contact us <span class="">24/7</span>
-            <span class="border-hover fw-bold ms-md-1 cursor-pointer"
-              >+1 50 537 53 082</span
-            >
-          </p>
-        </div>
 
-        <div class="d-none d-md-block">
-          <div class="d-flex cursor-pointer">
-            <iconify-icon
-              class="me-1 fs-6 fw-medium"
-              icon="noto:fire"
-            ></iconify-icon>
-            <p>The Biggest Sale Ever 50% Off</p>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartzilla | Furniture Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="fw-medium d-flex">
-          <span class="me-4 border-hover cursor-pointer">Wishlist</span>
-          <span class="border-hover cursor-pointer">Account</span>
+<body class="m-0 p-0">
+  <!-- top header and hero section -->
+  <div class="bg-gray px-3 px-md-5">
+    <!-- above header -->
+    <div class="d-flex align-items-center justify-content-between align-items-center smail-font pt-md-3 pb-1">
+      <div class="d-flex flex-row mt-3 mt-md-0">
+        <p>
+          Contact us <span class="">24/7</span>
+          <span class="border-hover fw-bold ms-md-1 cursor-pointer">+1 50 537 53 082</span>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block">
+        <div class="d-flex cursor-pointer">
+          <iconify-icon class="me-1 fs-6 fw-medium" icon="noto:fire"></iconify-icon>
+          <p>The Biggest Sale Ever 50% Off</p>
         </div>
       </div>
 
-      <!-- header -->
-      <div>
-        <!-- large screen header -->
+      <div class="fw-medium d-flex">
+        <span class="me-4 border-hover cursor-pointer">Wishlist</span>
+        <span class="border-hover cursor-pointer">Account</span>
+      </div>
+    </div>
 
-        <div class="d-none d-lg-block">
-          <header class="bg-white d-flex justify-content-between align-items-center rounded-5 px-3 py-1 row largerHeader">
-            <!-- logo -->
-            <div class="col-2">
-              <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
+    <!-- header -->
+    <div>
+      <!-- large screen header -->
+
+      <div class="d-none d-lg-block fixed-top">
+        <header class="bg-white d-flex justify-content-between align-items-center px-3 py-2 row largerHeader">
+          <!-- logo -->
+          <div class="col-2">
+            <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
+          </div>
+
+          <!-- menu -->
+          <div class="mt-3 col-5">
+            <ul class="cursor-pointer list-unstyled d-flex align-items-center justify-content-between item fw-medium">
+
+              <!-- home -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Home
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 pt-1 mx-2 my-0 rounded-2 mt-2 menuItem">
+                      <span>Electronics Store</span>
+                      <p class="pb-2 smail-font text-black-50">Megamenu + Hero slider</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Fashion Store v.1</span>
+                      <p class="pb-2 smail-font text-black-50">Hero promo slider</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Fashion Store v.2</span>
+                      <p class="pb-2 smail-font text-black-50">Hero banner with hotspots</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Furniture Store</span>
+                      <p class="pb-2 smail-font text-black-50">Fancy product carousel</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Grocery Store</span>
+                      <p class="pb-2 smail-font text-black-50">Hero slider + Category cards</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- shop -->
+              <li class="border-hover position-relative d-flex align-items-center blue-color" id="shopMenu">Shop
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="shopItemList" class=" bg-white rounded-3 p-4">
+
+                  <div class="d-flex justify-content-between">
+
+
+                    <!-- colum 1 -->
+                    <div class="">
+                      <h6 class="text-black fw-semibold">Electronics Store</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Categories Page</li>
+                        <li class="py-1">Catalog with Side Filters</li>
+                        <li class="py-1">Product General Info</li>
+                        <li class="py-1">Product Details</li>
+                        <li class="py-1">Product Reviews</li>
+
+
+                        <h6 class="text-black fw-semibold pt-3">Fashion Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Catalog with Side Filters</li>
+                          <li class="py-1">Product Page</li>
+                        </ul>
+
+
+                        <h6 class="text-black fw-semibold pt-3">Furniture Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Catalog with Top Filters</li>
+                          <li class="py-1">Product Page</li>
+                        </ul>
+                    </div>
+
+                    <!-- colum 2 -->
+                    <div>
+                      <h6 class="text-black fw-semibold">Grocery Store</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Catalog with Side Filters</li>
+                        <li class="py-1">Product Page</li>
+                      </ul>
+
+                      <h6 class="text-black fw-semibold pt-3">Checkout v.1</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Shopping Cart</li>
+                        <li class="py-1">Delivery Info (Step 1)</li>
+                        <li class="py-1">Delivery Info (Step 2)</li>
+                        <li class="py-1">Shipping Address</li>
+                        <li class="py-1">Payment</li>
+                        <li class="py-1">Thank You Page</li>
+                      </ul>
+
+                    </div>
+
+                    <!-- colum 3 -->
+                    <div>
+                      <h6 class="text-black fw-semibold">Checkout v.2</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Shopping Cart</li>
+                        <li class="py-1">Delivery Info</li>
+                        <li class="py-1">Pickup from Store</li>
+                        <li class="py-1">Thank You Page</li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <!-- account -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Account
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white py-2 rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                        href="/pages/signin.html">Sign In</a></li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                        href="/pages/create-account.html">Sign Up</a></li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Orders History</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Wishlist</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Payment Methods</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">My Reviews</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Personal Info</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Addresses</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Notifications</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- pages -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Pages
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white py-2 rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">About</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Blog</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Contact</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Help Center</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">404 Error</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Terms & Conditions</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="blue-color border-hover">Docs</li>
+              <li class="blue-color border-hover">Components</li>
+            </ul>
+          </div>
+
+          <!-- icons -->
+          <div class="col-2 d-flex align-items-center justify-content-between fs-4 text-muted">
+            <div>
+              <iconify-icon class="cursor-pointer" icon="ic:outline-light-mode"></iconify-icon>
             </div>
-          
-            <!-- menu -->
-            <div class="mt-3 col-5">
-              <ul class="cursor-pointer list-unstyled d-flex align-items-center justify-content-between item fw-medium">
-  
+            <div>
+              
+              <!-- offcanvas -->
+              <button class="border-0 bg-white position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><iconify-icon class="cursor-pointer" icon="vaadin:cart-o"></iconify-icon><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger item fw-medium px-2 py-1" id="cartCount">0</span></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header mt-2">
+                    <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">Shopping cart</h5>
+                    <button type="button" class="btn-close fs-6" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div id="cartItems" class="item">
+                      <!-- Empty message and icon -->
+                      <div id="emptyMessage" class="text-center">
+                        <iconify-icon class="fs-1 text-secondary" icon="vaadin:cart-o"></iconify-icon>
+                        <p class="fs-6">Your shopping cart is currently empty!</p>
+                      </div>
+                    </div>
+                    <div id="cartTotal" class="mt-3 pt-3 border-top">
+                      <h6>Total: $<span id="totalPrice">0.00</span></h6>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- offcanvas end -->
+
+
+            </div>
+            <div class="bg-gray pt-1 px-2 rounded-5">
+              <iconify-icon class="cursor-pointer mt-1" icon="ion:search-outline"></iconify-icon>
+            </div>
+          </div>
+        </header>
+      </div>
+
+
+
+      <!-- header small screens -->
+
+      <nav class="navbar d-block d-lg-none">
+        <div
+          class="container-fluid largerHeader bg-white d-flex justify-content-between align-items-center rounded-3 px-3 py-2">
+
+          <button class="fs-4 border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <iconify-icon
+              class="cursor-pointer" icon="line-md:menu"></iconify-icon>
+          </button>
+
+          <div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Browse Cartzilla</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-unstyled">
+
                 <!-- home -->
-                <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Home <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line" ></iconify-icon>
-                  <div id="homeItemList" class="bg-white rounded-3">
-                    <ul class="list-unstyled rounded-3 p-0 m-0">
+                <li class="my-2">
+                  <div class="dropdown">
+                    <button class="border-0 bg-white d-flex justify-content-between align-items-center w-100 blue-color"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer"
+                        icon="mingcute:down-line"></iconify-icon>
+                    </button>
+                    <ul class="dropdown-menu w-100">
+
                       <li class="px-3 pt-1 mx-2 my-0 rounded-2 mt-2 menuItem">
                         <span>Electronics Store</span>
                         <p class="pb-2 smail-font text-black-50">Megamenu + Hero slider</p>
@@ -89,83 +284,97 @@
                         <span>Grocery Store</span>
                         <p class="pb-2 smail-font text-black-50">Hero slider + Category cards</p>
                       </li>
+
+
                     </ul>
                   </div>
                 </li>
-  
+
                 <!-- shop -->
-                <li class="border-hover position-relative d-flex align-items-center blue-color" id="shopMenu">Shop <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line" ></iconify-icon>
-                  <div id="shopItemList" class=" bg-white rounded-3 p-4">
-  
-                    <div class="d-flex justify-content-between">
-  
-                    
-                    <!-- colum 1 -->
-                    <div class="">
-                      <h6 class="text-black fw-semibold">Electronics Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Categories Page</li>
-                        <li class="py-1">Catalog with Side Filters</li>
-                        <li class="py-1">Product General Info</li>
-                        <li class="py-1">Product Details</li>
-                        <li class="py-1">Product Reviews</li>
-                    
-                
-                      <h6 class="text-black fw-semibold pt-3">Fashion Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Catalog with Side Filters</li>
-                        <li class="py-1">Product Page</li>
-                      </ul>
-                      
-                
-                      <h6 class="text-black fw-semibold pt-3">Furniture Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Catalog with Top Filters</li>
-                        <li class="py-1">Product Page</li>
-                      </ul>
-                    </div>
-                
-                    <!-- colum 2 -->
-                    <div>
-                      <h6 class="text-black fw-semibold">Grocery Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Catalog with Side Filters</li>
-                        <li class="py-1">Product Page</li>
-                      </ul>
-                
-                      <h6 class="text-black fw-semibold pt-3">Checkout v.1</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Shopping Cart</li>
-                        <li class="py-1">Delivery Info (Step 1)</li>
-                        <li class="py-1">Delivery Info (Step 2)</li>
-                        <li class="py-1">Shipping Address</li>
-                        <li class="py-1">Payment</li>
-                        <li class="py-1">Thank You Page</li>
-                      </ul>
-                      
-                    </div>
-                
-                    <!-- colum 3 -->
-                    <div>
-                      <h6 class="text-black fw-semibold">Checkout v.2</h6>
-                      <ul class="list-unstyled item text-secondary" >
-                        <li class="py-1">Shopping Cart</li>
-                        <li class="py-1">Delivery Info</li>
-                        <li class="py-1">Pickup from Store</li>
-                        <li class="py-1" >Thank You Page</li>
-                      </ul>
-                      
-                    </div>
-  
-                  </div>
+                <li class="my-2">
+                  <div class="dropdown">
+                    <button class="border-0 blue-color bg-white d-flex justify-content-between align-items-center w-100"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer"
+                        icon="mingcute:down-line"></iconify-icon>
+                    </button>
+                    <ul class="dropdown-menu w-100">
+
+                      <div class="">
+                        <h6 class="text-black fw-semibold">Electronics Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Categories Page</li>
+                          <li class="py-1">Catalog with Side Filters</li>
+                          <li class="py-1">Product General Info</li>
+                          <li class="py-1">Product Details</li>
+                          <li class="py-1">Product Reviews</li>
+
+
+                          <h6 class="text-black fw-semibold pt-3">Fashion Store</h6>
+                          <ul class="list-unstyled item text-secondary">
+                            <li class="py-1">Catalog with Side Filters</li>
+                            <li class="py-1">Product Page</li>
+                          </ul>
+
+
+                          <h6 class="text-black fw-semibold pt-3">Furniture Store</h6>
+                          <ul class="list-unstyled item text-secondary">
+                            <li class="py-1">Catalog with Top Filters</li>
+                            <li class="py-1">Product Page</li>
+                          </ul>
+                      </div>
+
+                      <div>
+                        <h6 class="text-black fw-semibold">Grocery Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Catalog with Side Filters</li>
+                          <li class="py-1">Product Page</li>
+                        </ul>
+
+                        <h6 class="text-black fw-semibold pt-3">Checkout v.1</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Shopping Cart</li>
+                          <li class="py-1">Delivery Info (Step 1)</li>
+                          <li class="py-1">Delivery Info (Step 2)</li>
+                          <li class="py-1">Shipping Address</li>
+                          <li class="py-1">Payment</li>
+                          <li class="py-1">Thank You Page</li>
+                        </ul>
+
+                      </div>
+
+                      <div>
+                        <h6 class="text-black fw-semibold">Checkout v.2</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Shopping Cart</li>
+                          <li class="py-1">Delivery Info</li>
+                          <li class="py-1">Pickup from Store</li>
+                          <li class="py-1">Thank You Page</li>
+                        </ul>
+
+                      </div>
+
+
+
+
+                    </ul>
                   </div>
                 </li>
+
                 <!-- account -->
-                <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Account <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line" ></iconify-icon>
-                  <div id="homeItemList" class="bg-white py-2 rounded-3">
-                    <ul class="list-unstyled rounded-3 p-0 m-0">
-                      <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color" href="/pages/signin.html">Sign In</a></li>
-                      <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color" href="/pages/create-account.html">Sign Up</a></li>
+                <li class="my-2">
+                  <div class="dropdown">
+                    <button class="border-0 blue-color bg-white d-flex justify-content-between align-items-center w-100"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer"
+                        icon="mingcute:down-line"></iconify-icon>
+                    </button>
+                    <ul class="dropdown-menu w-100 blue-color">
+
+                      <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                          href="/pages/signin.html">Sign In</a></li>
+                      <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                          href="/pages/create-account.html">Sign Up</a></li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Orders History</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Wishlist</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Payment Methods</li>
@@ -173,89 +382,68 @@
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Personal Info</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Addresses</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Notifications</li>
+
+
                     </ul>
                   </div>
                 </li>
-  
+
                 <!-- pages -->
-                <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Pages <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line" ></iconify-icon>
-                  <div id="homeItemList" class="bg-white py-2 rounded-3">
-                    <ul class="list-unstyled rounded-3 p-0 m-0">
+                <li class="my-2">
+                  <div class="dropdown">
+                    <button class="border-0 blue-color bg-white d-flex justify-content-between align-items-center w-100"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pages <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer"
+                        icon="mingcute:down-line"></iconify-icon>
+                    </button>
+                    <ul class="dropdown-menu w-100 blue-color">
+
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">About</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Blog</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Contact</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Help Center</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">404 Error</li>
                       <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Terms & Conditions</li>
+
+
                     </ul>
                   </div>
                 </li>
-  
-                <li class="blue-color border-hover">Docs</li>
-                <li class="blue-color border-hover">Components</li>
+
+                <li class="blue-color ms-1 my-2">Docs</li>
+                <li class="blue-color ms-1 my-2">Components</li>
+
               </ul>
             </div>
-          
-            <!-- icons -->
-            <div class="col-2 d-flex align-items-center justify-content-between fs-4 text-muted">
-              <div>
-                <iconify-icon class="cursor-pointer bouncing-icon" icon="ic:outline-light-mode"></iconify-icon>
-              </div>
-              <div>
-                <iconify-icon class="cursor-pointer bouncing-icon" icon="pepicons-pop:cart"></iconify-icon>
-              </div>
-              <div class="bg-gray pt-1 px-2 rounded-5">
-                <iconify-icon class="cursor-pointer bouncing-icon mt-1" icon="ion:search-outline"></iconify-icon>
-              </div>
-            </div>
-          </header>
-        </div>
-     
-      
-
-        <!-- header small screens -->
-
-        <nav class="navbar">
-          <div class="container-fluid largerHeader bg-white d-flex justify-content-between align-items-center rounded-5 px-3 py-2">
-
-            <button class="fs-4 border-0 bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <iconify-icon class="cursor-pointer" icon="line-md:menu"></iconify-icon>
-            </button>
-
-<div class="offcanvas offcanvas-start w-75" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Browse Cartzilla</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
-  </div>
-</div>
-
-
-            <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
-           
-            <div class="d-flex align-items-center justify-content-between fs-4 text-muted">
-              <div>
-                <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="ic:outline-light-mode"></iconify-icon>
-              </div>
-              <div>
-                <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="pepicons-pop:cart"></iconify-icon>
-              </div>
-              <div class="bg-gray pt-2 px-1 rounded-5">
-                <iconify-icon class="cursor-pointer mx-2 bouncing-icon mt-1" icon="ion:search-outline"></iconify-icon>
-              </div>
-            </div>
-
-
           </div>
-        </nav>
-   
-      </div>
 
 
-      <!-- hero section -->
+          <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
 
-      <div class="mt-md-5 pt-4 container-fluid d-none d-lg-block">
+          <div class="d-flex align-items-center justify-content-between fs-4 text-muted">
+            <div>
+              <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="ic:outline-light-mode"></iconify-icon>
+            </div>
+            <div>
+              <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="vaadin:cart-o"></iconify-icon>
+            </div>
+            <div class="bg-gray pt-2 px-1 rounded-5">
+              <iconify-icon class="cursor-pointer mx-2 bouncing-icon mt-1" icon="ion:search-outline"></iconify-icon>
+            </div>
+          </div>
+
+
+        </div>
+      </nav>
+
+    </div>
+
+
+    <!-- hero section -->
+    <section>
+      <!-- hero section large screen -->
+
+      <div class="py-5 container-fluid d-none d-lg-block">
 
         <h1 class="text-center fw-bold display-4">Everything You Need for <br> a Modern Interior</h1>
 
@@ -267,10 +455,12 @@
           </div>
           <!-- center image -->
           <div class="img2 d-flex align-items-center">
-            <iconify-icon class="me-1 fs-6 fw-medium p-3 rounded-circle border border-1 cursor-pointer" icon="grommet-icons:form-previous" ></iconify-icon>
+            <iconify-icon class="me-1 fs-6 fw-medium p-3 rounded-circle border border-1 cursor-pointer"
+              icon="grommet-icons:form-previous"></iconify-icon>
             <img class="img-fluid" src="/imgs/hero-1.png" alt="">
-            <iconify-icon class="me-1 fs-6 fw-medium p-3 rounded-circle border border-1 cursor-pointer" icon="grommet-icons:form-next" ></iconify-icon>
-            
+            <iconify-icon class="me-1 fs-6 fw-medium p-3 rounded-circle border border-1 cursor-pointer"
+              icon="grommet-icons:form-next"></iconify-icon>
+
           </div>
           <!-- img 3 -->
           <div class="img3">
@@ -287,19 +477,181 @@
           <span class="text-black fs-3 fw-semibold mt-0">$1,250.00</span> <br>
 
           <div class="d-flex justify-content-center">
-            <button class="mt-3 rounded-5 px-4 py-2 text-white border-0 blue-bg d-flex align-items-center">Shop now <iconify-icon class="me-1 fs-6 fw-medium" icon="grommet-icons:form-next" ></iconify-icon></button>
-            
+            <button class="mt-3 rounded-5 px-4 py-2 text-white border-0 blue-bg d-flex align-items-center">Shop now
+              <iconify-icon class="me-1 fs-6 fw-medium" icon="grommet-icons:form-next"></iconify-icon></button>
+
           </div>
 
         </div>
 
       </div>
 
+      <!-- small screen hero -->
+      <div class="py-5 d-block d-lg-none">
+        <h1 class="fw-bolder display-4">Everything You Need for a Modern Interior</h1>
+
+        <div class="d-flex justify-content-center align-items-center gap-3 pt-4">
+
+          <iconify-icon class="me-1 fs-5 fw-medium p-3 rounded-circle border border-1 cursor-pointer"
+            icon="grommet-icons:form-previous"></iconify-icon>
+
+          <iconify-icon class="me-1 fs-5 fw-medium p-3 rounded-circle border border-1 cursor-pointer"
+            icon="grommet-icons:form-next"></iconify-icon>
+
+        </div>
+
+
+        <div>
+          <img class="img-fluid" src="/imgs/hero-1.png" alt="">
+
+        </div>
+
+        <div class="text-center mt-4 mb-5 pb-5">
+
+          <p class="blue-color pb-0">Navy blue low sofa for relaxation</p>
+
+          <span class="text-black fs-3 fw-semibold mt-0">$1,250.00</span> <br>
+
+          <div class="d-flex justify-content-center">
+            <button class="mt-3 rounded-5 px-4 py-2 text-white border-0 blue-bg d-flex align-items-center">Shop now
+              <iconify-icon class="me-1 fs-5 fw-medium" icon="grommet-icons:form-next"></iconify-icon></button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- items section -->
+
+  <section>
+
+    <div class="py-5 my-5 d-flex justify-content-between align-items-center px-md-4 mx-4 flex-wrap row">
+
+      <!-- card 1 -->
+      <div class="d-flex flex-column align-items-center cursor-pointer col-6 col-md-4 col-lg-2 px-md-4 px-lg-4">
+        <img class="img-fluid bg-gray rounded-circle" src="/imgs/bed.png" alt="">
+        <span class="fw-bold mt-2">Bedroom</span>
+      </div>
+
+
+      <!-- card 2 -->
+      <div class="d-flex flex-column align-items-center cursor-pointer col-6 col-md-4 col-lg-2 px-md-4 px-lg-4">
+        <img class="img-fluid bg-gray rounded-circle" src="/imgs/living-room.png" alt="">
+        <span class="fw-bold mt-2">Living room</span>
+      </div>
+
+
+      <!-- card 3 -->
+      <div class="d-none d-md-block col-md-4 col-lg-2 px-md-4 px-lg-4">
+        <div class="d-flex flex-column align-items-center cursor-pointer ">
+          <img class="img-fluid bg-gray rounded-circle" src="/imgs/bathroom.png" alt="">
+          <span class="fw-bold mt-2">Bathroom</span>
+        </div>
+      </div>
+
+
+
+      <!-- card 4 -->
+      <div class="d-none d-md-block col-md-4 col-lg-2 mt-md-5 mt-lg-0 px-md-4 px-lg-4">
+        <div class="d-flex flex-column align-items-center cursor-pointer ">
+          <img class="img-fluid bg-gray rounded-circle" src="/imgs/decoration.png" alt="">
+          <span class="fw-bold mt-2">Decoration</span>
+        </div>
+      </div>
+
+
+
+      <!-- card 5 -->
+      <div class="d-none d-md-block col-md-4 col-lg-2 mt-md-5 mt-lg-0 px-md-4 px-lg-4">
+        <div class="d-flex flex-column align-items-center cursor-pointer ">
+          <img class="img-fluid bg-gray rounded-circle" src="/imgs/office.png" alt="">
+          <span class="fw-bold mt-2">Office</span>
+        </div>
+
+      </div>
+
+
+      <!-- card 6 -->
+      <div class="d-none d-md-block col-md-4 col-lg-2 mt-md-5 mt-lg-0 px-md-4 px-lg-4">
+        <div class="d-flex flex-column align-items-center cursor-pointer">
+          <img class="img-fluid bg-gray rounded-circle" src="/imgs/kitchen.png" alt="">
+          <span class="fw-bold mt-2">Kitchen</span>
+        </div>
+      </div>
 
 
 
     </div>
 
-    <script src="index.js"></script>
-  </body>
+  </section>
+
+
+  <!-- Add Cart Items -->
+
+  <section class="py-5">
+
+    <div class="d-flex justify-content-between align-items-center mx-md-5 border-bottom pb-3">
+      <div>
+        <h3 class="fw-semibold">Popular products</h3>
+      </div>
+      <div>
+        <span class="border-hover cursor-pointer d-flex align-items-center item">View all  <iconify-icon class="cursor-pointer smail-font text-secondary ms-1" icon="ooui:next-ltr"></iconify-icon></span>
+      </div>
+    </div>
+
+   
+<!-- Cards for Items -->
+<div class="d-flex justify-content-between gap-4 gap-md-5 align-items-center container-fluid px-md-5">
+  <!-- Card 1 -->
+  <div class="" style="width: 17rem;">
+    <img src="/imgs/bed-addCart.png" class="card-img-top" alt="Bed frame light gray 140x200 cm">
+    <div class="card-body">
+      <p class="card-title item fw-medium">Bed frame light gray 140x200 cm</p>
+      <p class="card-text mt-2 fw-bold">$760.00</p>
+      <button class="py-md-2 px-md-5 text-white text-center rounded-5 add-to-cart border-0 w-100" data-name="Bed frame light gray 140x200 cm" data-price="760.00" data-image="/imgs/bed-addCart.png">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="" style="width: 17rem;">
+    <img src="/imgs/sofa-addCart.png" class="card-img-top" alt="Blue armchair with iron legs">
+    <div class="card-body">
+      <p class="card-title item fw-medium">Blue armchair with iron legs</p>
+      <p class="card-text mt-2 fw-bold">$220.00</p>
+      <button class="py-md-2 px-md-5 text-white text-center rounded-5 add-to-cart border-0 w-100" data-name="Blue armchair with iron legs" data-price="220.00" data-image="/imgs/sofa-addCart.png">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="d-none d-md-block" style="width: 17rem;">
+    <img src="/imgs/lamp-addCart.png" class="card-img-top" alt="Loft-style lamp 120x80 cm">
+    <div class="card-body">
+      <p class="card-title item fw-medium">Loft-style lamp 120x80 cm</p>
+      <p class="card-text mt-2 fw-bold">$140.00</p>
+      <button class="py-2 px-5 text-white text-center rounded-5 add-to-cart border-0 w-100" data-name="Loft-style lamp 120x80 cm" data-price="140.00" data-image="/imgs/lamp-addCart.png">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="d-none d-lg-block" style="width: 17rem;">
+    <img src="/imgs/armchair-addCart.png" class="card-img-top" alt="Armchair with wooden legs 60x100 cm">
+    <div class="card-body">
+      <p class="card-title item fw-medium">Armchair with wooden legs 60x100 cm</p>
+      <p class="card-text mt-2 fw-bold">$320.00</p>
+      <button class="py-2 px-5 text-white text-center rounded-5 add-to-cart border-0 w-100" data-name="Armchair with wooden legs 60x100 cm" data-price="320.00" data-image="/imgs/armchair-addCart.png">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
