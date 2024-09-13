@@ -128,3 +128,9 @@ left: 0;
 .cart-item:last-child {
   border-bottom: none; /* Remove bottom border from the last item */
 }
+.design-1{
+  margin-top: -130px;
+}
+.design-2{
+  margin-top: -80px;
+}
