@@ -36,7 +36,6 @@ shopMenu.addEventListener('mouseleave', function(){
 
 // add cart items
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const cartItemsContainer = document.getElementById('cartItems');
   const emptyMessage = document.getElementById('emptyMessage');
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="d-flex align-items-center">
             <input type="number" class="form-control ms-4 me-2 item-quantity" value="${item.quantity}" min="1" data-name="${item.name}">
-            <button class="btn btn-danger btn-sm remove-item" data-name="${item.name}" data-action="decrease">&minus;</button>
+            <button class="btn btn-danger btn-sm remove-item fs-4 py-0" data-name="${item.name}" data-action="decrease">&times;</button>
           </div>
         `;
         cartItemsContainer.appendChild(itemDiv);
