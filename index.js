@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartCount = document.getElementById('cartCount');
   const totalPriceElement = document.getElementById('totalPrice');
 
-  // Load cart from local storage
+  // local storage
   const loadCart = () => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     return cart;
@@ -54,15 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let cart = loadCart();
 
-  // Function to update cart display
+  // update cart display
   function updateCart() {
     if (cart.length === 0) {
-      // Show empty message and icon
+      // Show empty message
       emptyMessage.style.display = 'block';
       cartItemsContainer.innerHTML = emptyMessage.outerHTML;
       totalPriceElement.textContent = '0.00';
     } else {
-      // Hide empty message and icon
+      // Hide empty message
       emptyMessage.style.display = 'none';
       cartItemsContainer.innerHTML = ''; // Clear previous items
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
   }
 
-  // Function to add item to cart
+  // add item in cart
   function addToCart(name, price, image) {
     const existingItem = cart.find(item => item.name === name);
     if (existingItem) {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCart();
   }
 
-  // Function to decrease item quantity
+  // decrease item quantity
   function decreaseItemQuantity(name) {
     const item = cart.find(item => item.name === name);
     if (item) {
@@ -118,14 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Function to remove item from cart
+  // remove item from cart
   function removeFromCart(name) {
     cart = cart.filter(item => item.name !== name);
     saveCart(cart);
     updateCart();
   }
 
-  // Function to update item quantity
+  // update item quantity
   function updateItemQuantity(name, quantity) {
     const item = cart.find(item => item.name === name);
     if (item) {
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Add event listeners to "Add to Cart" buttons
+  // Add to Cart buttons event listener
   document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', (event) => {
       event.preventDefault();
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Add event listeners to "Decrease Quantity" buttons
+  // event listener in Decrease Quantity buttons
   document.getElementById('cartItems').addEventListener('click', (event) => {
     if (event.target.classList.contains('remove-item') && event.target.getAttribute('data-action') === 'decrease') {
       const name = event.target.getAttribute('data-name');
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Add event listener to quantity inputs
+  // event listener in quantity input
   document.getElementById('cartItems').addEventListener('change', (event) => {
     if (event.target.classList.contains('item-quantity')) {
       const name = event.target.getAttribute('data-name');

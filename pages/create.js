@@ -1,7 +1,6 @@
 document.getElementById('createAccountForm').addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    // Clear previous error messages and styles
     document.getElementById('emailError').style.display = 'none';
     document.getElementById('passwordError').style.display = 'none';
     document.getElementById('emailInput').style.borderColor = '';
@@ -10,7 +9,7 @@ document.getElementById('createAccountForm').addEventListener('submit', async fu
     let email = document.getElementById('emailInput').value;
     let password = document.getElementById('passwordInput').value;
 
-    // Validation for empty fields
+    // designing for empty inputs
     let valid = true;
 
     if (!email) {
@@ -27,7 +26,6 @@ document.getElementById('createAccountForm').addEventListener('submit', async fu
 
     if (!valid) return; // Exit if validation fails
 
-    // If validation passes, you can proceed with form submission or redirection
-    // For demonstration, we will redirect to the sign-in page
+    // If validation completed go to login page
     window.location.href = '/pages/signin.html';
 });

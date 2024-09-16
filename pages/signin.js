@@ -1,7 +1,6 @@
 document.getElementById('userForm').addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    // Clear previous error messages and styles
     document.getElementById('emailError').style.display = 'none';
     document.getElementById('passwordError').style.display = 'none';
     document.getElementById('exampleFormControlInput1').style.borderColor = '';
@@ -10,7 +9,7 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
     let email = document.getElementById('exampleFormControlInput1').value;
     let password = document.getElementById('inputPassword').value;
 
-    // Validation for empty fields
+    // designing for empty inputs
     let valid = true;
 
     if (!email) {
@@ -25,7 +24,7 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
         valid = false;
     }
 
-    if (!valid) return; // Exit if validation fails
+    if (!valid) return; // Exit if validation fail
 
     try {
         let USER_API = await fetch('https://fakestoreapi.com/users');

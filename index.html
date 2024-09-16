@@ -20,212 +20,14 @@
   <div class="bg-gray px-3 px-md-5">
 
     <!-- header -->
-    <div>
-      <!-- large screen header -->
-
-      <div class="d-none d-lg-block fixed-top">
+      <div class="fixed-top">
         <header
-          class="bg-white d-flex justify-content-between rounded-5 mx-5 align-items-center px-3 py-2 row largerHeader">
-          <!-- logo -->
-          <div class="col-2">
-            <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
-          </div>
+          class="bg-white d-flex justify-content-between rounded-5 mx-md-5 align-items-center px-3 py-3 py-lg-2 row largerHeader">
+          
+          <!-- offcanva -->
 
-          <!-- menu -->
-          <div class="mt-3 col-5">
-            <ul class="cursor-pointer list-unstyled d-flex align-items-center justify-content-between item fw-medium">
-
-              <!-- home -->
-              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Home
-                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
-                <div id="homeItemList" class="bg-white rounded-3">
-                  <ul class="list-unstyled rounded-3 p-0 m-0">
-                    <li class="px-3 pt-1 mx-2 my-0 rounded-2 mt-2 menuItem">
-                      <span>Electronics Store</span>
-                      <p class="pb-2 smail-font text-black-50">Megamenu + Hero slider</p>
-                    </li>
-                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
-                      <span>Fashion Store v.1</span>
-                      <p class="pb-2 smail-font text-black-50">Hero promo slider</p>
-                    </li>
-                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
-                      <span>Fashion Store v.2</span>
-                      <p class="pb-2 smail-font text-black-50">Hero banner with hotspots</p>
-                    </li>
-                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
-                      <span>Furniture Store</span>
-                      <p class="pb-2 smail-font text-black-50">Fancy product carousel</p>
-                    </li>
-                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
-                      <span>Grocery Store</span>
-                      <p class="pb-2 smail-font text-black-50">Hero slider + Category cards</p>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <!-- shop -->
-              <li class="border-hover position-relative d-flex align-items-center blue-color" id="shopMenu">Shop
-                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
-                <div id="shopItemList" class=" bg-white rounded-3 p-4">
-
-                  <div class="d-flex justify-content-between">
-
-
-                    <!-- colum 1 -->
-                    <div class="">
-                      <h6 class="text-black fw-semibold">Electronics Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Categories Page</li>
-                        <li class="py-1">Catalog with Side Filters</li>
-                        <li class="py-1">Product General Info</li>
-                        <li class="py-1">Product Details</li>
-                        <li class="py-1">Product Reviews</li>
-
-
-                        <h6 class="text-black fw-semibold pt-3">Fashion Store</h6>
-                        <ul class="list-unstyled item text-secondary">
-                          <li class="py-1">Catalog with Side Filters</li>
-                          <li class="py-1">Product Page</li>
-                        </ul>
-
-
-                        <h6 class="text-black fw-semibold pt-3">Furniture Store</h6>
-                        <ul class="list-unstyled item text-secondary">
-                          <li class="py-1">Catalog with Top Filters</li>
-                          <li class="py-1">Product Page</li>
-                        </ul>
-                    </div>
-
-                    <!-- colum 2 -->
-                    <div>
-                      <h6 class="text-black fw-semibold">Grocery Store</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Catalog with Side Filters</li>
-                        <li class="py-1">Product Page</li>
-                      </ul>
-
-                      <h6 class="text-black fw-semibold pt-3">Checkout v.1</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Shopping Cart</li>
-                        <li class="py-1">Delivery Info (Step 1)</li>
-                        <li class="py-1">Delivery Info (Step 2)</li>
-                        <li class="py-1">Shipping Address</li>
-                        <li class="py-1">Payment</li>
-                        <li class="py-1">Thank You Page</li>
-                      </ul>
-
-                    </div>
-
-                    <!-- colum 3 -->
-                    <div>
-                      <h6 class="text-black fw-semibold">Checkout v.2</h6>
-                      <ul class="list-unstyled item text-secondary">
-                        <li class="py-1">Shopping Cart</li>
-                        <li class="py-1">Delivery Info</li>
-                        <li class="py-1">Pickup from Store</li>
-                        <li class="py-1">Thank You Page</li>
-                      </ul>
-
-                    </div>
-
-                  </div>
-                </div>
-              </li>
-              <!-- account -->
-              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Account
-                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
-                <div id="homeItemList" class="bg-white py-2 rounded-3">
-                  <ul class="list-unstyled rounded-3 p-0 m-0">
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
-                        href="/pages/signin.html">Sign In</a></li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
-                        href="/pages/create-account.html">Sign Up</a></li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Orders History</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Wishlist</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Payment Methods</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">My Reviews</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Personal Info</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Addresses</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Notifications</li>
-                  </ul>
-                </div>
-              </li>
-
-              <!-- pages -->
-              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Pages
-                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
-                <div id="homeItemList" class="bg-white py-2 rounded-3">
-                  <ul class="list-unstyled rounded-3 p-0 m-0">
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">About</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Blog</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Contact</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Help Center</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">404 Error</li>
-                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Terms & Conditions</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="blue-color border-hover">Docs</li>
-              <li class="blue-color border-hover">Components</li>
-            </ul>
-          </div>
-
-          <!-- icons -->
-          <div class="col-2 d-flex align-items-center justify-content-between fs-4 text-muted">
-            <div>
-              <iconify-icon class="cursor-pointer" icon="ic:outline-light-mode"></iconify-icon>
-            </div>
-            <div>
-
-              <!-- offcanvas -->
-              <button class="border-0 bg-white position-relative" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon class="cursor-pointer"
-                  icon="vaadin:cart-o"></iconify-icon><span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger item fw-medium px-2 py-1"
-                  id="cartCount">0</span></button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header mt-2">
-                  <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">Shopping cart</h5>
-                  <button type="button" class="btn-close fs-6" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div id="cartItems" class="item">
-                    <!-- Empty message and icon -->
-                    <div id="emptyMessage" class="text-center">
-                      <iconify-icon class="fs-1 text-secondary" icon="vaadin:cart-o"></iconify-icon>
-                      <p class="fs-6">Your shopping cart is currently empty!</p>
-                    </div>
-                  </div>
-                  <div id="cartTotal" class="mt-3 pt-3 border-top">
-                    <h6>Total: $<span id="totalPrice">0.00</span></h6>
-                  </div>
-                </div>
-              </div>
-
-              <!-- offcanvas end -->
-
-
-            </div>
-            <div class="bg-gray pt-1 px-2 rounded-5">
-              <iconify-icon class="cursor-pointer mt-1" icon="ion:search-outline"></iconify-icon>
-            </div>
-          </div>
-        </header>
-      </div>
-
-
-
-      <!-- header small screens -->
-
-      <nav class="navbar d-block d-lg-none">
-        <div
-          class="container-fluid largerHeader bg-white d-flex justify-content-between align-items-center rounded-3 px-3 py-2">
-
-          <button class="fs-4 border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+          <div class="col-1 d-block d-lg-none">
+            <button class="fs-4 border-0 bg-white" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <iconify-icon
               class="cursor-pointer" icon="line-md:menu"></iconify-icon>
           </button>
@@ -401,27 +203,201 @@
               </ul>
             </div>
           </div>
-
-
-          <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
-
-          <div class="d-flex align-items-center justify-content-between fs-4 text-muted">
-            <div>
-              <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="ic:outline-light-mode"></iconify-icon>
-            </div>
-            <div>
-              <iconify-icon class="cursor-pointer mx-2 bouncing-icon" icon="vaadin:cart-o"></iconify-icon>
-            </div>
-            <div class="bg-gray pt-2 px-1 rounded-5">
-              <iconify-icon class="cursor-pointer mx-2 bouncing-icon mt-1" icon="ion:search-outline"></iconify-icon>
-            </div>
+          </div>
+         
+          
+          <!-- logo -->
+          <div class="col-3 col-lg-2">
+            <a class="text-decoration-none fs-4 text-black fw-semibold" href="">Cartzilla</a>
           </div>
 
+          <!-- menu -->
+          <div class="mt-3 col-5 d-none d-lg-block">
+            <ul class="cursor-pointer list-unstyled d-flex align-items-center justify-content-between item fw-medium">
 
-        </div>
-      </nav>
+              <!-- home -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Home
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 pt-1 mx-2 my-0 rounded-2 mt-2 menuItem">
+                      <span>Electronics Store</span>
+                      <p class="pb-2 smail-font text-black-50">Megamenu + Hero slider</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Fashion Store v.1</span>
+                      <p class="pb-2 smail-font text-black-50">Hero promo slider</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Fashion Store v.2</span>
+                      <p class="pb-2 smail-font text-black-50">Hero banner with hotspots</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Furniture Store</span>
+                      <p class="pb-2 smail-font text-black-50">Fancy product carousel</p>
+                    </li>
+                    <li class="px-3 pt-1 menuItem mx-2 my-0 rounded-2">
+                      <span>Grocery Store</span>
+                      <p class="pb-2 smail-font text-black-50">Hero slider + Category cards</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-    </div>
+              <!-- shop -->
+              <li class="border-hover position-relative d-flex align-items-center blue-color" id="shopMenu">Shop
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="shopItemList" class=" bg-white rounded-3 p-4">
+
+                  <div class="d-flex justify-content-between">
+
+
+                    <!-- colum 1 -->
+                    <div class="">
+                      <h6 class="text-black fw-semibold">Electronics Store</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Categories Page</li>
+                        <li class="py-1">Catalog with Side Filters</li>
+                        <li class="py-1">Product General Info</li>
+                        <li class="py-1">Product Details</li>
+                        <li class="py-1">Product Reviews</li>
+
+
+                        <h6 class="text-black fw-semibold pt-3">Fashion Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Catalog with Side Filters</li>
+                          <li class="py-1">Product Page</li>
+                        </ul>
+
+
+                        <h6 class="text-black fw-semibold pt-3">Furniture Store</h6>
+                        <ul class="list-unstyled item text-secondary">
+                          <li class="py-1">Catalog with Top Filters</li>
+                          <li class="py-1">Product Page</li>
+                        </ul>
+                    </div>
+
+                    <!-- colum 2 -->
+                    <div>
+                      <h6 class="text-black fw-semibold">Grocery Store</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Catalog with Side Filters</li>
+                        <li class="py-1">Product Page</li>
+                      </ul>
+
+                      <h6 class="text-black fw-semibold pt-3">Checkout v.1</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Shopping Cart</li>
+                        <li class="py-1">Delivery Info (Step 1)</li>
+                        <li class="py-1">Delivery Info (Step 2)</li>
+                        <li class="py-1">Shipping Address</li>
+                        <li class="py-1">Payment</li>
+                        <li class="py-1">Thank You Page</li>
+                      </ul>
+
+                    </div>
+
+                    <!-- colum 3 -->
+                    <div>
+                      <h6 class="text-black fw-semibold">Checkout v.2</h6>
+                      <ul class="list-unstyled item text-secondary">
+                        <li class="py-1">Shopping Cart</li>
+                        <li class="py-1">Delivery Info</li>
+                        <li class="py-1">Pickup from Store</li>
+                        <li class="py-1">Thank You Page</li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <!-- account -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Account
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white py-2 rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                        href="/pages/signin.html">Sign In</a></li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2"><a class="text-decoration-none blue-color"
+                        href="/pages/create-account.html">Sign Up</a></li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Orders History</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Wishlist</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Payment Methods</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">My Reviews</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Personal Info</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Addresses</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Notifications</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- pages -->
+              <li id="homeMenu" class="border-hover position-relative d-flex align-items-center blue-color">Pages
+                <iconify-icon class="ms-1 fs-6 blue-color cursor-pointer" icon="mingcute:down-line"></iconify-icon>
+                <div id="homeItemList" class="bg-white py-2 rounded-3">
+                  <ul class="list-unstyled rounded-3 p-0 m-0">
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">About</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Blog</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Contact</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Help Center</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">404 Error</li>
+                    <li class="px-3 py-2 menuItem mx-2 my-0 rounded-2 mt-2">Terms & Conditions</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="blue-color border-hover">Docs</li>
+              <li class="blue-color border-hover">Components</li>
+            </ul>
+          </div>
+
+          <!-- icons -->
+          <div class="col-lg-2 col-5 col-md-3 d-flex align-items-center justify-content-between fs-4 text-muted">
+            <div>
+              <iconify-icon class="cursor-pointer" icon="ic:outline-light-mode"></iconify-icon>
+            </div>
+            <div>
+
+              <!-- offcanvas -->
+              <button class="border-0 bg-white position-relative" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon class="cursor-pointer"
+                  icon="vaadin:cart-o"></iconify-icon><span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger item fw-medium px-2 py-1"
+                  id="cartCount">0</span></button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header mt-2">
+                  <h5 class="offcanvas-title fw-semibold" id="offcanvasRightLabel">Shopping cart</h5>
+                  <button type="button" class="btn-close fs-6" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div id="cartItems" class="item">
+                    <!-- Empty message and icon -->
+                    <div id="emptyMessage" class="text-center">
+                      <iconify-icon class="fs-1 text-secondary" icon="vaadin:cart-o"></iconify-icon>
+                      <p class="fs-6">Your shopping cart is currently empty!</p>
+                    </div>
+                  </div>
+                  <div id="cartTotal" class="mt-3 pt-3 border-top">
+                    <h6>Total: $<span id="totalPrice">0.00</span></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- offcanvas end -->
+
+
+            </div>
+            <div class="bg-gray pt-1 px-2 rounded-5">
+              <iconify-icon class="cursor-pointer mt-1" icon="ion:search-outline"></iconify-icon>
+            </div>
+          </div>
+        </header>
+      </div>
+
+
 
 
     <!-- hero section -->
@@ -473,7 +449,7 @@
 
       <!-- small screen hero -->
       <div class="py-5 d-block d-lg-none">
-        <h1 class="fw-bolder display-4">Everything You Need for a Modern Interior</h1>
+        <h1 class="fw-bolder display-4 mt-5">Everything You Need for a Modern Interior</h1>
 
         <div class="d-flex justify-content-center align-items-center gap-3 pt-4">
 
