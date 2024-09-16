@@ -1,30 +1,40 @@
-document.getElementById('createAccountForm').addEventListener('submit', async function(e) {
+document.getElementById('createAccountForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    document.getElementById('emailError').style.display = 'none';
-    document.getElementById('passwordError').style.display = 'none';
-    document.getElementById('emailInput').style.borderColor = '';
-    document.getElementById('passwordInput').style.borderColor = '';
+    let emailError = document.getElementById('emailError');
+    let passwordError = document.getElementById('passwordError');
+    let emailInput = document.getElementById('emailInput');
+    let passwordInput = document.getElementById('passwordInput');
+
+    // default design - text none and border color empty
+    emailError.style.display = 'none';
+    passwordError.style.display = 'none';
+    emailInput.style.borderColor = '';
+    passwordInput.style.borderColor = '';
+
 
     let email = document.getElementById('emailInput').value;
     let password = document.getElementById('passwordInput').value;
 
-    // designing for empty inputs
+    // validation true
     let valid = true;
 
+    // condition check if email id empty or undefined 
     if (!email) {
-        document.getElementById('emailError').style.display = 'block';
-        document.getElementById('emailInput').style.borderColor = 'red';
+        emailError.style.display = 'block';
+        emailInput.style.borderColor = 'red';
         valid = false;
     }
 
+     // condition check if password id empty or undefined 
     if (!password) {
-        document.getElementById('passwordError').style.display = 'block';
-        document.getElementById('passwordInput').style.borderColor = 'red';
+        passwordError.style.display = 'block';
+        passwordInput.style.borderColor = 'red';
         valid = false;
     }
 
-    if (!valid) return; // Exit if validation fails
+    // if validation is false stop the execution
+    if (!valid) return; 
 
     // If validation completed go to login page
     window.location.href = '/pages/signin.html';

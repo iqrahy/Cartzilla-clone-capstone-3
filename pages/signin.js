@@ -9,7 +9,7 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
     let email = document.getElementById('exampleFormControlInput1').value;
     let password = document.getElementById('inputPassword').value;
 
-    // designing for empty inputs
+    // validation true
     let valid = true;
 
     if (!email) {
@@ -24,15 +24,16 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
         valid = false;
     }
 
-    if (!valid) return; // Exit if validation fail
+    // if validation is false stop the execution
+    if (!valid) return; 
 
     try {
         let USER_API = await fetch('https://fakestoreapi.com/users');
         let users = await USER_API.json();
 
-        const user = users.find(user => user.email === email && user.password === password);
+        const userInfo = users.find(user => user.email === email && user.password === password);
 
-        if (user) {
+        if (userInfo) {
             window.location.href = '../index.html';
         } else {
             alert('Email or Password is incorrect!');
